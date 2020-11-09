@@ -1,0 +1,3 @@
+move hyperlinks to top right of header
+apply design attributes to all hyperlinks
+try and incorporate a dynamic scrolling feature.
