@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -14,12 +15,10 @@ header {
     display: grid;
 }
 h1 {
-    padding-bottom: 50px;
     padding-top: 50px;
 }
 nav {
-
-    padding-bottom: 12px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -46,11 +45,12 @@ h1, h2, p {
     padding-left: 7px;
 }
 .about {
-    background-color: #1A7373;
+    background: linear-gradient(#223D73, #1A7373);
     padding-bottom: 100px;
     color: whitesmoke;
 }
 .about p {
+    padding-top: 18px;
     line-height: 1.5;
     font-size: 14pt;
     text-align: justify;
@@ -71,7 +71,7 @@ h1, h2, p {
 }
 .hobbies {
     padding-bottom: 100px;
-    background-color: #0E5673;
+    background: linear-gradient( #1A7373, #223D73);
     color: #C1D9B0;
 }
 .interests {
@@ -83,11 +83,14 @@ h1, h2, p {
     padding-bottom: 100px;
 }
 .links {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     justify-content: space-evenly;
     align-content: center ;
+}
+.links img {
+    width: 50px;
 }
 footer {
     padding-top: 100px;
@@ -95,4 +98,19 @@ footer {
     color: #C1D9B0;
     background-color: #223D73;
 }
-
+@media (min-width: 700px) {
+    .about, .skills, .hobbies {
+        padding-left: 244px;
+        padding-right: 244px;
+    }
+    .title {
+        display: flex;
+        justify-content: space-between;
+    }
+    .title h1 {
+        padding: 18px 0 36px 144px;
+    }
+    .links {
+        padding: 68px 144px 18px 0px;
+    }
+}
