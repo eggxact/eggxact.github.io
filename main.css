@@ -5,20 +5,17 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-header {
-    background-color: white;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+.skills, #languages, #frameworks, #miscillaneous {
+    display: flex; 
 }
-img {
-    max-width: 100%;
+#languages, #frameworks, #miscillaneous {
+    flex-wrap: wrap;
 }
-.contact {
-    display: flex;
-    justify-content: space-evenly;
+.projects img {
+    height: 200px;
+    max-width: 300px;
 }
-.contact img {
+.contact a img {
     width: 75px;
     height: 75px;
 }
