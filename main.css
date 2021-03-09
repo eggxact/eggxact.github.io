@@ -5,15 +5,53 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+body {
+    max-width: 80%;
+    display: flex;
+    margin: 0 15% 0 15%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#skills {
+    margin-top: 50px;
+}
 .skills, #languages, #frameworks, #miscillaneous {
     display: flex; 
+    justify-content: center;
 }
 #languages, #frameworks, #miscillaneous {
     flex-wrap: wrap;
+    width: 31%;
+}
+#languages, #frameworks, #miscillaneous  div {
+    grid-template-rows: 1fr 1fr;
+}
+ul {
+    list-style-type: none;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.projects div {
+    width: 49%;
 }
 .projects img {
     height: 200px;
     max-width: 300px;
+}
+#contact-info {
+    text-align: center;
+    margin-top: 50px;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact a {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .contact a img {
     width: 75px;
